@@ -77,9 +77,9 @@ def get_music_chats():
 
 
 MUSIC_CHATS = get_music_chats()
-API_ID = os.environ["API_ID"]
-API_HASH = os.environ["API_HASH"]
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+API_ID = os.environ["API_ID", "24123408"]
+API_HASH = os.environ["API_HASH", "31b8525e9486aed13fc6d8cf9473cd4b"]
+BOT_TOKEN = os.environ["BOT_TOKEN", "6040448297:AAEQ_lG3UbUmjD0ftk50rA0SVrH26-szAm0"]
 app = Client(
     "tgmusicbot",
     api_id=API_ID,
